@@ -40,7 +40,7 @@ Where:
 
 1. **Install dependencies:**
    ```bash
-  pip install streamlit matplotlib
+    pip install streamlit matplotlib
 
 ### Features
 
