@@ -50,9 +50,9 @@ Follow these steps to run the Streamlit web app locally:
    ```bash
    git clone https://github.com/Alibehram11/micro-turbine-energy.git
    cd micro-turbine-energy
-### Run the Streamlit app:
-
--streamlit run app.py
+2. **Run the Streamlit app:**
+   ```bash
+    streamlit run app.py
 
 
 ### Open your browser:
