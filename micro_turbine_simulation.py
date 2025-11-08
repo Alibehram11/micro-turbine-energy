@@ -25,7 +25,7 @@ while True:
         eta = float(input("Turbine efficiency (%): ")) / 100  # Efficiency as percentage
         pipe_diameter = float(input("Pipe diameter (mm): ")) / 1000  # Convert to meters
         pressure = float(input("Pipe internal pressure (bar): ")) * 1e5  # Convert to Pascal
-    except (ValueError, NameError):
+    except (ValueError, NameError, NameError):
         print("Please enter a valid value.")
         continue
     break
@@ -48,4 +48,5 @@ plt.xlabel("Flow Rate (m³/s)")
 plt.ylabel("Power (W)")
 plt.grid(True)
 plt.show()
+
 print("for more information, send email to: alibehram11.albarktar@gmail.com")
