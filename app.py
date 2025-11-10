@@ -25,7 +25,7 @@ try:
     η = st.slider("Efficiency (%)", 10, 100, 85)
     ρ = 1000  # water density (kg/m³)
     g = 9.81  # gravitational acceleration (m/s²)
-except (ValueError, TypeError):
+except (ValueError, TypeError, NameError):
     print("Please enter valid numerical values for all input parameters.")
 
 # ---------------------------
@@ -72,3 +72,4 @@ Where:
 This simulation demonstrates the potential of **micro-hydropower systems**  
 for sustainable energy generation from wastewater pipelines. 🌍
 """)
+
