@@ -1,99 +1,77 @@
-# 💧 Energy Generation in Wastewater Pipelines Using Micro Turbines  
+# Micro Turbine Energy Simulation
 
----
+A Streamlit simulation for estimating how much electrical power a small turbine could generate from water flow in a pipeline.
 
-## 🌍 English Summary
+The project is educational: it helps visualize how flow rate, head difference, and efficiency affect theoretical power output.
 
-### 🎯 Project Goal
-This project demonstrates a **micro-hydropower energy system** designed for **wastewater pipelines**.  
-It simulates the process of converting the **kinetic energy of flowing wastewater** into **electrical energy** using micro turbines.
+## Project Goal
 
-The main objectives are:
-- Reduce energy waste in sewage systems  
-- Generate electricity from existing wastewater flow  
-- Decrease pipeline erosion through controlled hydraulic dynamics  
+The simulation explores a micro-hydropower idea for wastewater or water pipeline systems. It does not claim to be an engineering design tool; it is a simple model for learning and early concept testing.
 
----
+## Formula
 
-### ⚙️ Technologies Used
-- **Python 3**
-- **Streamlit** → Web interface for interactive simulation  
-- **Matplotlib** → Graph visualization and plotting  
+```text
+P = rho * g * Q * h * eta
+```
 
----
+Where:
 
-### 🧮 Formula
-\[
-P = \rho \times g \times Q \times h \times \eta
-\]
+- `P` = power in watts
+- `rho` = water density, usually about `1000 kg/m3`
+- `g` = gravitational acceleration, `9.81 m/s2`
+- `Q` = flow rate in `m3/s`
+- `h` = head difference in meters
+- `eta` = turbine efficiency from `0` to `1`
 
-Where:  
-- ρ = Water density (1000 kg/m³)  
-- g = Gravitational acceleration (9.81 m/s²)  
-- Q = Flow rate (m³/s)  
-- h = Head difference (m)  
-- η = Efficiency  
+## Features
 
----
+- Interactive Streamlit interface.
+- Adjustable flow rate, head, and efficiency inputs.
+- Automatic power calculation.
+- Matplotlib graph for flow rate vs. power output.
+- Simple educational explanation of the model.
 
-### ▶️ How to Run the Project
+## Tech Stack
 
-1. **Install dependencies:**
-   ```bash
-    pip install streamlit matplotlib
+- Python 3.9+
+- Streamlit
+- Matplotlib
 
-## 🚀 How to Run the Application
+## Run Locally
 
-Follow these steps to run the Streamlit web app locally:
+Clone the repository:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Alibehram11/micro-turbine-energy.git
-   cd micro-turbine-energy
-2. **Run the Streamlit app:**
-   ```bash
-    streamlit run app.py
+```bash
+git clone https://github.com/Alibehram11/micro-turbine-energy.git
+cd micro-turbine-energy
+```
 
+Install dependencies:
 
-### Open your browser:
--Streamlit will open automatically at:
--👉 http://localhost:8501
+```bash
+pip install streamlit matplotlib
+```
 
-### 🌐 Optional: Online Deployment
+Run the app:
 
--You can also deploy this project for free using Streamlit Cloud:
+```bash
+streamlit run app.py
+```
 
--Go to https://share.streamlit.io
+Open the local Streamlit URL in your browser:
 
--Connect your GitHub account
+```text
+http://localhost:8501
+```
 
--Select this repository
+## Deployment
 
--Click Deploy
+The app can be deployed on Streamlit Community Cloud after connecting this GitHub repository. Add the live URL here after deployment.
 
-### Your app will get a public link like:
--👉 https://micro-turbine-energy.streamlit.app
+## Limitations
 
-### ⚙️ Requirements
+This model is simplified. Real wastewater turbine design also requires pipe geometry, solids and debris handling, maintenance access, flow variation, pressure constraints, turbine selection, and safety review.
 
--Python 3.9 or higher
-
--Streamlit
-
--Matplotlib
-
--Web browser (for visualization)
-
-### Features
-
--Adjustable input values for flow rate, head, and efficiency
--Real-time graph of Flow Rate vs Power Output
--Automatic calculation of turbine power (in kW)
--Clean, minimalist user interface
--Educational visualization for renewable energy applications
-
-
-# 👤 Author
+## Author
 
 Ali Behram Albayrak
-Renewable Energy Simulation Project – 2025
