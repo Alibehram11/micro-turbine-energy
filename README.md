@@ -1,12 +1,14 @@
 # Micro Turbine Energy Simulation
 
-A Streamlit simulation for estimating how much electrical power a small turbine could generate from water flow in a pipeline.
+Streamlit educational simulation for micro-hydropower energy in pipelines.
 
-The project is educational: it helps visualize how flow rate, head difference, and efficiency affect theoretical power output.
+## Problem
 
-## Project Goal
+Micro-hydropower ideas are hard to discuss without a quick way to change flow rate, head difference, and turbine efficiency. This project makes the basic calculation visible for early learning and concept discussion.
 
-The simulation explores a micro-hydropower idea for wastewater or water pipeline systems. It does not claim to be an engineering design tool; it is a simple model for learning and early concept testing.
+## Solution
+
+The app estimates theoretical turbine power from water flow and visualizes how input changes affect output. It is an educational simulation, not an engineering design or deployment tool.
 
 ## Formula
 
@@ -64,13 +66,37 @@ Open the local Streamlit URL in your browser:
 http://localhost:8501
 ```
 
+## Verification
+
+- Run the Streamlit app locally.
+- Change flow rate, head, and efficiency.
+- Confirm the calculated power and graph update.
+- Compare one manual calculation against the displayed value.
+
+## Demo / Evidence
+
+- Shows a renewable-energy calculation with interactive inputs.
+- Uses a transparent formula and plain-language limitations.
+- Public roadmap is tracked in GitHub Issues.
+
 ## Deployment
 
 The app can be deployed on Streamlit Community Cloud after connecting this GitHub repository. Add the live URL here after deployment.
 
 ## Limitations
 
-This model is simplified. Real wastewater turbine design also requires pipe geometry, solids and debris handling, maintenance access, flow variation, pressure constraints, turbine selection, and safety review.
+This model is simplified. Real wastewater turbine design also requires pipe geometry, solids and debris handling, maintenance access, flow variation, pressure constraints, turbine selection, environmental review, and safety review.
+
+## Roadmap
+
+- Separate calculation logic from the Streamlit UI.
+- Add a small test for the power formula.
+- Add one screenshot or GIF.
+- Add deployment link after publishing to Streamlit Community Cloud.
+
+## Status
+
+Educational simulation. Useful as a research/prototype signal, but not a pinned main portfolio project until the code structure, tests, and demo are stronger.
 
 ## Author
 
